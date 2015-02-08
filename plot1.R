@@ -14,7 +14,7 @@ plot1 <- function() {
   
   ePower <- read.table("./household_power_consumption.txt", sep = ";", header = TRUE, stringsAsFactors = FALSE)
   
-  # Get only the rows and columns needed: Feb 1 and 2 2007 dates and times, and the measure Global_active_power. Add a new column with date+time.
+  # Get only the rows and columns needed: Feb 1 and 2 2007 dates and times, and the measure Global_active_power. 
   
   ePowerTwoDays <- ePower[grepl("^1/2/2007|^2/2/2007",ePower$Date),c(1,2,3)]
 
